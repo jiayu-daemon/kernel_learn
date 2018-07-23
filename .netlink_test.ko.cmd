@@ -1,1 +1,0 @@
-cmd_/home/jy/kernel_learn/netlink_test.ko := ld -r -m elf_i386 -T ./scripts/module-common.lds --build-id  -o /home/jy/kernel_learn/netlink_test.ko /home/jy/kernel_learn/netlink_test.o /home/jy/kernel_learn/netlink_test.mod.o

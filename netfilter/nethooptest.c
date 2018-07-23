@@ -15,23 +15,21 @@ static unsigned int hook_func(unsigned int hooknum,
 {
     return NF_ACCEPT;
 }
- 
- 
+
+
 static int nf_init(void)
 {
+
     nfho.hook = hook_func;
-    nfho.hooknum  = NF_INET_PRE_ROUTING; 
+    nfho.hooknum  = NF_INET_PRE_ROUTING;
     nfho.pf       = PF_INET;
     nfho.priority = NF_IP_PRI_FIRST;
- 
- 
     nf_register_hook(&nfho);
- 
- 
+
     return 0;
 }
- 
- 
+
+
 static void  nf_cleanup(void)
 {
     nf_unregister_hook(&nfho);
