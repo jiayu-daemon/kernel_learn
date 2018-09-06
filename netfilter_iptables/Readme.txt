@@ -11,3 +11,6 @@ iptables是用户态的，是一个规则编辑工具，防火墙管理员通过这个工具对内存中的规则执
 简而言之，就是防火墙管理员通过iptables工具，将“防火墙规则”写入到netfilter的规则数据库中。
 所以Linux防火墙比较正确的名称应该是netfilter/iptables。
 
+
+
+
